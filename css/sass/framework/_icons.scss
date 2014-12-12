@@ -1,0 +1,66 @@
+/* ==========================================================================
+ * 8. Icons
+ * ========================================================================== */
+
+.list-icons {
+  @extend .list-unstyled;
+
+  > li {
+    display: inline-block;
+    padding-right: 5px;
+
+    > a {
+      display: block;
+      margin-right: 0;
+      width: $iconSize;
+      height: $iconSize;
+      @include border-radius($borderRadius);
+      @include hide-text();
+    }
+
+    .icon {
+      width: $iconSize;
+      height: $iconSize;
+      @include border-radius($borderRadius);
+    }
+
+    .icon-lg {
+      width: $iconSizeLg;
+      height: $iconSizeLg;
+      @include border-radius($borderRadius);
+    }
+  }
+}
+
+/* --------------------------------------------------------------------------
+ * Social Network Icons
+ * -------------------------------------------------------------------------- */
+
+.icons-social {
+  .icon {
+    background-image: url('../img/icons/icons-#{$iconSize}-social.png');
+  }
+
+  .icon-lg {
+    background-image: url('../img/icons/icons-#{$iconSizeLg}-social.png');
+  }
+
+  .icon-facebook  { background-position: 0 0; }
+  .icon-twitter   { background-position: -#{$iconSize} 0 }
+  .icon-dribbble  { background-position: -#{$iconSize * 2} 0 }
+  .icon-instagram { background-position: -#{$iconSize * 3} 0 }
+  .icon-linkedin  { background-position: -#{$iconSize * 4} 0 }
+
+  .icon-lg.icon-facebook  { background-position: 0 0; }
+  .icon-lg.icon-twitter   { background-position: -#{$iconSizeLg} 0 }
+  .icon-lg.icon-dribbble { background-position: -#{$iconSizeLg * 2} 0 }
+  .icon-lg.icon-instagram  { background-position: -#{$iconSizeLg * 3} 0 }
+  .icon-lg.icon-linkedin { background-position: -#{$iconSizeLg * 4} 0 }
+
+  // social network specific hex's on hover
+  .icon-facebook:hover  { background-color: #3b5998; }
+  .icon-twitter:hover   { background-color: #00aced; }
+  .icon-instagram:hover { background-color: #517fa4; }
+  .icon-dribbble:hover  { background-color: #ea4c89; }
+  .icon-linkedin:hover  { background-color: #4875B4; }
+}

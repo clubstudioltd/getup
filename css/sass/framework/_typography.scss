@@ -1,0 +1,123 @@
+/* ==========================================================================
+ * 4. Typography
+ * ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    font-family: $fontSansSerif;
+    color: $textColour;
+}
+
+html {
+    font-size: $fontSize;
+    line-height: $lineHeight;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $fontHeadings;
+    text-rendering: optimizelegibility;
+}
+
+h1 { font-size: $fontSize * 2.25; } // 27px
+h2 { font-size: $fontSize * 2; }    // 24px
+h3 { font-size: $fontSize * 1.75; } // 21px
+h4 { font-size: $fontSize * 1.5; }  // 18px
+h5 { font-size: $fontSize * 1.25; } // 15px
+h6 { font-size: $fontSize; }        // 12px
+
+p,
+address {
+    margin: 0 0 ($fontSize * 1.25) 0;
+}
+
+small {
+    font-size: 85%;
+}
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+cite {
+    font-style: normal;
+}
+
+address {
+    display: block;
+    font-style: normal;
+    line-height: $lineHeight;
+}
+
+/* --------------------------------------------------------------------------
+ * Links
+ * -------------------------------------------------------------------------- */
+
+a {
+    color: $linkColour;
+    text-decoration: $linkDecoration;
+}
+
+
+/* --------------------------------------------------------------------------
+ * Lists
+ * -------------------------------------------------------------------------- */
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: $lineHeight / 2;
+
+    ul,
+    ol {
+        margin-bottom: 0;
+    }
+}
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+.list-inline {
+    @extend .list-unstyled;
+
+    > li {
+        display: inline-block;
+        padding-right: 10px;
+
+        &.spacer {
+            margin-left: -5px;
+            padding-right: 4px;
+        }
+
+    }
+
+    &.pull-right,
+    &.text-right {
+        > li {
+            padding-right: 0;
+            padding-left: 10px;
+        }
+    }
+
+}
+
+/* --------------------------------------------------------------------------
+ * A better looking default horizontal rule
+ * -------------------------------------------------------------------------- */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid $border;
+    margin: 1em 0;
+    padding: 0;
+}

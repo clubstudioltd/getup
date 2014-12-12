@@ -1,0 +1,37 @@
+/*!
+ * Club CSS Scaffold v1.0.0
+ * Copyright 2013 Club Studio Ltd.
+ * Author: Scott Wakefield (scott@clubstudio.co.uk)
+ */
+
+/*
+ * 01. Variables
+ * 02. Mixins
+ * 03. Reset
+ * 04. Base Styles
+ * 05. Layout & Grid System
+ * 06. Navigation
+ * 07. Forms
+ * 08. Icons
+ * 09. Layout
+ * 10. Buttons
+ * 11. Alerts
+ *
+ * 00. Print Styles (Optional)
+**/
+
+@import "variables";    // 1
+@import "mixins";       // 2
+@import "reset";        // 3
+@import "base";         // 4
+@import "typography";   // 5
+@import "navigation";   // 6
+@import "forms";        // 7
+@import "icons";        // 8
+@import "layout";       // 9
+@import "buttons";      // 10
+@import "alerts";       // 11
+
+@import "utilities";    // 12
+
+// use @import "print"; at the end of main.scss if you need it.

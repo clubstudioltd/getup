@@ -1,0 +1,68 @@
+/* ==========================================================================
+ * 4. General Base Styles
+ * ========================================================================== */
+
+/* --------------------------------------------------------------------------
+ * Remove text-shadow in selection highlight
+ * -------------------------------------------------------------------------- */
+
+::-moz-selection {
+  background: $alt;
+  text-shadow: none;
+}
+
+::selection {
+  background: $alt;
+  text-shadow: none;
+}
+
+/* --------------------------------------------------------------------------
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers
+ * -------------------------------------------------------------------------- */
+
+audio,
+canvas,
+img,
+video {
+  vertical-align: middle;
+}
+
+/* --------------------------------------------------------------------------
+ * Remove default fieldset styles
+ * -------------------------------------------------------------------------- */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* --------------------------------------------------------------------------
+ * Unsupported browser notice
+ * -------------------------------------------------------------------------- */
+
+.unsupported-browser {
+  margin: 0 0 0.3em 0;
+  background: $warningBackground;
+  color: $warningText;
+  padding: 0.3em 0;
+  text-align: center;
+
+  a {
+    color: darken($warningText, 20%);
+  }
+}
+
+/* --------------------------------------------------------------------------
+ * Website Logo Image Replacement
+ * -------------------------------------------------------------------------- */
+
+.site-logo {
+  margin: 0;
+
+  a {
+    display: block;
+    @include hide-text();
+  }
+}

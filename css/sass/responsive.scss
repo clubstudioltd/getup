@@ -1,0 +1,94 @@
+@import "framework/variables";
+@import "framework/mixins";
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+    /* ======================================================================
+     * 04. Base Styles
+     * ====================================================================== */
+
+    /* ======================================================================
+     * 05. Layout & Grid System
+     * ====================================================================== */
+
+        .container {
+            @include container-fixed();
+        }
+
+        @include grid-core($gridColumnWidth, $gridGutterWidth);
+        @include grid-fluid($fluidGridColumnWidth, $fluidGridGutterWidth);
+
+        [class*="span"]{
+            display: inline-block;
+            margin-bottom: 0;
+        }
+
+        [class*="span"].pull-right,
+        .row-fluid [class*="span"].pull-right {
+            float: right;
+        }
+
+    /* ======================================================================
+     * 06. Navigation
+     * ====================================================================== */
+
+        .nav-toggle {
+            display: none;
+        }
+
+        .nav-main {
+            display: block;
+            margin-left: 0;
+            margin-right: 0;
+
+            > li {
+                display: inline-block;
+                padding-right: 10px;
+            }
+
+        }
+
+    /* ======================================================================
+     * 07. Forms
+     * ====================================================================== */
+
+        .field-horizontal {
+
+            input {
+                width: 300px;
+            }
+
+        }
+
+    /* ======================================================================
+     * 08. Icons
+     * ====================================================================== */
+
+    /* ======================================================================
+     * 09. Layout
+     * ====================================================================== */
+
+    /* ======================================================================
+     * 10. Buttons
+     * ====================================================================== */
+
+        .btn {
+            display: inline-block;
+        }
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+    /* Style adjustments for high resolution devices*/
+
+}
