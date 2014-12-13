@@ -14,7 +14,7 @@
     "test",
     "tests"
   ],
-  "dev-dependencies": {
+  "dependencies": {
     "jquery": "~2.1.1",
     "html5shiv": "~3.7.2"
   }
