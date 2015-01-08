@@ -2,17 +2,21 @@
  * Club Getup: Grid
  * ========================================================================== */
 
-.row {
-  margin-left: -($grid-gutter / 2);
-  margin-right: -($grid-gutter / 2);
-  @include clearfix();
+.section-container,
+.section-container-fluid {
+  padding-left: ($grid-gutter);
+  padding-right: ($grid-gutter);
 }
 
 .section-container {
   margin-left: auto;
   margin-right: auto;
-  padding-left: ($grid-gutter);
-  padding-right: ($grid-gutter);
+}
+
+.row {
+  margin-left: -($grid-gutter / 2);
+  margin-right: -($grid-gutter / 2);
+  @include clearfix();
 }
 
 [class*="col-"] {
