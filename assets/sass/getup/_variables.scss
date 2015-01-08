@@ -1,5 +1,5 @@
-$brand-primary: #346094;
-$brand-secondary: #ffa400;
+$brand-primary: #346094 !default;
+$brand-secondary: #ffa400 !default;
 
 $font-family: Avenir, Helvetica, sans-serif !default;
 $font-family-headings: $font-family !default;
@@ -29,5 +29,5 @@ $xlarge-up:    "#{$screen} and (min-width: #{$xlarge-min})" !default;
 $xlarge-only:  "#{$screen} and (min-width: #{$xlarge-min}) and (max-width: #{$xlarge-max})" !default;
 $xxlarge-up:   "#{$screen} and (min-width: #{$xxlarge-min})" !default;
 
-$grid-columns: 12;
-$grid-gutter: 30px;
+$grid-columns: 12 !default;
+$grid-gutter: 30px !default;
