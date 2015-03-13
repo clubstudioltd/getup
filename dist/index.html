@@ -3,8 +3,288 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>Getup!</title>
+    <link rel="stylesheet" href="css/getup.css">
+    <style>
+        section {
+            padding: 30px 0;
+            background-color: #f9f9f9;
+            margin: 30px 0;
+        }
+
+        .row {
+            margin-bottom: 10px;
+        }
+
+        div[class*='col-'] {
+            background-color: #fff;
+            border: 1px solid #eee;
+            text-align: center;
+            font-size: 12px;
+            line-height: 1;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
+    <h1 class="text-center">Club &dash; Getup CSS Framework</h1>
+    <section>
+        <div class="section-container">
+            <header>
+                <h2>Typography</h2>
+            </header>
+            <h1>H1. Heading 1</h1>
+            <h2>H2. Heading 2</h2>
+            <h3>H3. Heading 3</h3>
+            <h4>H4. Heading 4</h4>
+            <h5>H5. Heading 5</h5>
+            <h6>H6. Heading 6</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, labore, excepturi, porro sint accusamus fuga laborum molestias veniam non accusantium voluptatibus tempora eligendi eaque quidem voluptas est alias fugit nihil!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, labore, excepturi, porro sint accusamus fuga laborum molestias veniam non accusantium voluptatibus tempora eligendi eaque quidem voluptas est alias fugit nihil!</p>
+            <h3>Address</h3>
+            <address>
+                <strong>Name</strong><br>
+                Address 1<br>
+                Address 2<br>
+                County<br>
+                City<br>
+                Postcode
+            </address>
+            <address>
+                <strong>Scott Wakefield</strong><br>
+                <a href="#">scott@clubstudio.co.uk</a>
+            </address>
+        </div>
+    </section>
 
+    <section>
+        <div class="section-container">
+            <header>
+                <h2>Lists</h2>
+            </header>
+            <h3>Normal List</h3>
+            <ul>
+                <li><a href="#">Nav Link 1</a></li>
+                <li><a href="#">Nav Link 2</a></li>
+                <li><a href="#">Nav Link 3</a></li>
+                <li><a href="#">Nav Link 4</a></li>
+                <li>
+                    <a href="#">Nav Link 5</a>
+                    <ul>
+                        <li>Sub Link 1</li>
+                        <li>Sub Link 2</li>
+                    </ul>
+                </li>
+            </ul>
+            <h3>Unstyled List</h3>
+            <ul class="list-unstyled">
+                <li><a href="#">Nav Link 1</a></li>
+                <li><a href="#">Nav Link 2</a></li>
+                <li><a href="#">Nav Link 3</a></li>
+                <li><a href="#">Nav Link 4</a></li>
+                <li>
+                    <a href="#">Nav Link 5</a>
+                    <ul>
+                        <li>Sub Link 1</li>
+                        <li>Sub Link 2</li>
+                    </ul>
+                </li>
+            </ul>
+            <h3>Inline List</h3>
+            <ul class="list-inline">
+                <li><a href="#">Nav Link 1</a></li>
+                <li><a href="#">Nav Link 2</a></li>
+                <li><a href="#">Nav Link 3</a></li>
+                <li><a href="#">Nav Link 4</a></li>
+                <li><a href="#">Nav Link 5</a></li>
+            </ul>
+            <h3>Inline List (Right)</h3>
+            <ul class="list-inline text-right">
+                <li><a href="#">Nav Link 1</a></li>
+                <li><a href="#">Nav Link 2</a></li>
+                <li><a href="#">Nav Link 3</a></li>
+                <li><a href="#">Nav Link 4</a></li>
+                <li><a href="#">Nav Link 5</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <div class="section-container">
+            <header>
+                <h2>Buttons</h2>
+            </header>
+            <ul class="list-inline">
+                <li><a href="#" class="btn">Basic Button</a></li>
+                <li><a href="#" class="btn disabled">Disabled Button</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <div class="section-container">
+            <header>
+                <h2>Grid</h2>
+                <ul>
+                    <li>Use .col-sm-, .col-md-, .col-lg-, .col-xl- to define column widths at different screen sizes</li>
+                </ul>
+            </header>
+            <h3>Fixed Grid</h3>
+            <ul>
+                <li>Rows should always be placed in a .section-container.</li>
+            </ul>
+            <div class="row">
+                <div class="col-md-1">.col-md-1</div>
+                <div class="col-md-1">.col-md-1</div>
+                <div class="col-md-1">.col-md-1</div>
+                <div class="col-md-1">.col-md-1</div>
+                <div class="col-md-1">.col-md-1</div>
+                <div class="col-md-1">.col-md-1</div>
+                <div class="col-md-1">.col-md-1</div>
+                <div class="col-md-1">.col-md-1</div>
+                <div class="col-md-1">.col-md-1</div>
+                <div class="col-md-1">.col-md-1</div>
+                <div class="col-md-1">.col-md-1</div>
+                <div class="col-md-1">.col-md-1</div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">.col-md-2</div>
+                <div class="col-md-2">.col-md-2</div>
+                <div class="col-md-2">.col-md-2</div>
+                <div class="col-md-2">.col-md-2</div>
+                <div class="col-md-2">.col-md-2</div>
+                <div class="col-md-2">.col-md-2</div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">.col-md-3</div>
+                <div class="col-md-3">.col-md-3</div>
+                <div class="col-md-3">.col-md-3</div>
+                <div class="col-md-3">.col-md-3</div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">.col-md-4</div>
+                <div class="col-md-4">.col-md-4</div>
+                <div class="col-md-4">.col-md-4</div>
+            </div>
+            <div class="row">
+                <div class="col-md-5">.col-md-5</div>
+                <div class="col-md-7">.col-md-7</div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">.col-md-6</div>
+                <div class="col-md-6">.col-md-6</div>
+            </div>
+            <div class="row">
+                <div class="col-md-7">.col-md-7</div>
+                <div class="col-md-5">.col-md-5</div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">.col-md-8</div>
+                <div class="col-md-4">.col-md-4</div>
+            </div>
+            <div class="row">
+                <div class="col-md-9">.col-md-9</div>
+                <div class="col-md-3">.col-md-3</div>
+            </div>
+            <div class="row">
+                <div class="col-md-10">.col-md-10</div>
+                <div class="col-md-2">.col-md-2</div>
+            </div>
+            <div class="row">
+                <div class="col-md-11">.col-md-11</div>
+                <div class="col-md-1">.col-md-1</div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">.col-md-12</div>
+            </div>
+            <h3>Fluid Grid</h3>
+            <ul>
+                <li>Rows should always be placed in a .section-container-fluid.</li>
+            </ul>
+        </div>
+        <div class="section-container-fluid">
+            <div class="row">
+                <div class="col-md-1">.col-md-1</div>
+                <div class="col-md-1">.col-md-1</div>
+                <div class="col-md-1">.col-md-1</div>
+                <div class="col-md-1">.col-md-1</div>
+                <div class="col-md-1">.col-md-1</div>
+                <div class="col-md-1">.col-md-1</div>
+                <div class="col-md-1">.col-md-1</div>
+                <div class="col-md-1">.col-md-1</div>
+                <div class="col-md-1">.col-md-1</div>
+                <div class="col-md-1">.col-md-1</div>
+                <div class="col-md-1">.col-md-1</div>
+                <div class="col-md-1">.col-md-1</div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">.col-md-2</div>
+                <div class="col-md-2">.col-md-2</div>
+                <div class="col-md-2">.col-md-2</div>
+                <div class="col-md-2">.col-md-2</div>
+                <div class="col-md-2">.col-md-2</div>
+                <div class="col-md-2">.col-md-2</div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">.col-md-3</div>
+                <div class="col-md-3">.col-md-3</div>
+                <div class="col-md-3">.col-md-3</div>
+                <div class="col-md-3">.col-md-3</div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">.col-md-4</div>
+                <div class="col-md-4">.col-md-4</div>
+                <div class="col-md-4">.col-md-4</div>
+            </div>
+            <div class="row">
+                <div class="col-md-5">.col-md-5</div>
+                <div class="col-md-7">.col-md-7</div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">.col-md-6</div>
+                <div class="col-md-6">.col-md-6</div>
+            </div>
+            <div class="row">
+                <div class="col-md-7">.col-md-7</div>
+                <div class="col-md-5">.col-md-5</div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">.col-md-8</div>
+                <div class="col-md-4">.col-md-4</div>
+            </div>
+            <div class="row">
+                <div class="col-md-9">.col-md-9</div>
+                <div class="col-md-3">.col-md-3</div>
+            </div>
+            <div class="row">
+                <div class="col-md-10">.col-md-10</div>
+                <div class="col-md-2">.col-md-2</div>
+            </div>
+            <div class="row">
+                <div class="col-md-11">.col-md-11</div>
+                <div class="col-md-1">.col-md-1</div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">.col-md-12</div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="section-container">
+            <header>
+                <h2>Utilities</h2>
+            </header>
+            <h3>Alignment</h3>
+            <p class="text-left">.text-left</p>
+            <p class="text-center">.text-center</p>
+            <p class="text-right">.text-right</p>
+            <h3>Floats</h3>
+            <div class="clearfix">
+                <div class="pull-left">.pull-left</div>
+                <div class="pull-right">.pull-right</div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
