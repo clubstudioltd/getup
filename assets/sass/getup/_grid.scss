@@ -26,6 +26,16 @@
   padding-right: ($grid-gutter / 2);
 }
 
+.row-gutterless {
+    margin-left: 0;
+    margin-right: 0;
+
+    [class*="col-"] {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
 @media #{$small-up} {
   @include grid-columns('col-sm', $grid-columns);
   @include grid-columns-offset('col-offset-sm', $grid-columns);
