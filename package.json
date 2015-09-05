@@ -1,8 +1,6 @@
 {
-  "name": "getup",
+  "name": "club-getup",
   "version": "1.0.0",
-  "main": "",
-  "dependencies": {},
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-autoprefixer": "^2.0.0",
@@ -11,7 +9,6 @@
     "grunt-contrib-watch": "^0.6.1",
     "grunt-sass": "^0.17.0"
   },
-  "scripts": {},
-  "author": "Scott Wakefield - Club Studio Ltd",
+  "author": "Club Studo Ltd <dev@clubstudio.co.uk>",
   "license": "ISC"
 }

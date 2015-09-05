@@ -2,7 +2,6 @@
  * Club Getup: Icons
  * ========================================================================== */
 
-// Baseclass
 .icon {
   position: relative;
   top: 1px;
@@ -15,4 +14,4 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-x { &:before { content: "\2a"; } }
+// .icon-x { &:before { content: "\2a"; } }

@@ -2,13 +2,13 @@
  * Club Getup: Grid
  * ========================================================================== */
 
-.section-container {
+.container {
   margin-left: auto;
   margin-right: auto;
 }
 
-.section-container,
-.section-container-fluid {
+.container,
+.container-fluid {
   padding-left: ($grid-gutter);
   padding-right: ($grid-gutter);
 }
@@ -48,7 +48,7 @@
 }
 
 @media #{$large-up} {
-  //  @include container($large-max);
+  @include container($large-max);
   @include grid-columns('col-lg', $grid-columns);
   @include grid-columns-offset('col-offset-lg', $grid-columns);
 }

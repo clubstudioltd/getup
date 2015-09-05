@@ -13,8 +13,8 @@
   }
 }
 
-@mixin container($width) {
-  .section-container { max-width: $width }
+@mixin container($max-width) {
+  .container { max-width: $max-width; }
 }
 
 @mixin grid-columns($prefix, $columns) {
@@ -37,7 +37,7 @@
   margin-left: $span * $column-width;
 }
 
-@mixin placeholder($color: $text-color) {
+@mixin placeholder($color: $form-placeholder-color) {
   // Firefox
   &::-moz-placeholder {
     color: $color;

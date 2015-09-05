@@ -3,20 +3,16 @@
  * ========================================================================== */
 
 /* --------------------------------------------------------------------------
- * Colours
- * -------------------------------------------------------------------------- */
-
-$brand-primary: #346094 !default;
-$brand-secondary: #ffa400 !default;
-
-/* --------------------------------------------------------------------------
  * Fonts & Typography
  * -------------------------------------------------------------------------- */
 
-$font-family: Helvetica, Arial, sans-serif !default;
-$font-family-headings: $font-family !default;
+$font-family-base: Helvetica, Arial, sans-serif !default;
+$font-family-headings: $font-family-base !default;
+$font-smoothing: antialiased !default;
 $font-size: 16px !default;
-$line-height: 1.5 !default;
+
+$line-height: 1.6 !default;
+$line-height-headings: 1.2 !default;
 
 /* --------------------------------------------------------------------------
  * Media Query Breakpoints
@@ -54,4 +50,4 @@ $xxlarge-up:   "#{$screen} and (min-width: #{$xxlarge-min})" !default;
  * -------------------------------------------------------------------------- */
 
 $grid-columns: 12 !default;
-$grid-gutter: 30px !default;
+$grid-gutter: 20px !default;
