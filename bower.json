@@ -2,6 +2,7 @@
   "name": "club-getup",
   "description": "Simple CSS framework to aid the development of a website.",
   "license": "MIT",
+  "main": "src/sass/getup.scss",
   "ignore": [
     "**/.*",
     "node_modules",
