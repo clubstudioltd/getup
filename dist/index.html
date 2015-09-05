@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="css/getup.css">
     <style>
         section {
-            padding: 30px 0;
+            margin: 0.67em 0;
+            padding: 0.67em 0;
             background-color: #f9f9f9;
-            margin: 30px 0;
         }
 
         .row {
@@ -29,7 +29,7 @@
         div[class*='col-'] > div {
             padding-top: 10px;
             padding-bottom: 10px;
-            background-color: rgba(0,255,0,.1);
+            background-color: rgba(0, 255, 0, .1);
             font-family: monospace;
         }
     </style>
@@ -37,7 +37,7 @@
 <body>
     <h1 class="text-center">Club &dash; Getup CSS Framework</h1>
     <section>
-        <div class="section-container">
+        <div class="container">
             <header>
                 <h2>Typography</h2>
             </header>
@@ -66,7 +66,7 @@
     </section>
 
     <section>
-        <div class="section-container">
+        <div class="container">
             <header>
                 <h2>Lists</h2>
             </header>
@@ -118,7 +118,7 @@
     </section>
 
     <section>
-        <div class="section-container">
+        <div class="container">
             <header>
                 <h2>Buttons</h2>
             </header>
@@ -130,7 +130,7 @@
     </section>
 
     <section>
-        <div class="section-container">
+        <div class="container">
             <header>
                 <h2>Grid</h2>
                 <ul>
@@ -139,7 +139,7 @@
             </header>
             <h3>Fixed Grid</h3>
             <ul>
-                <li>Rows should always be placed inside <code>.section-container</code>.</li>
+                <li>Rows should always be placed inside <code>.container</code>.</li>
             </ul>
             <div class="row">
                 <div class="col-md-1"><div>.col-md-1</div></div>
@@ -207,10 +207,10 @@
             </div>
             <h3>Fluid Grid</h3>
             <ul>
-                <li>Rows should always be placed in a <code>.section-container-fluid</code>.</li>
+                <li>Rows should always be placed in a <code>.container-fluid</code>.</li>
             </ul>
         </div>
-        <div class="section-container-fluid">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-md-1"><div>.col-md-1</div></div>
                 <div class="col-md-1"><div>.col-md-1</div></div>
@@ -276,11 +276,11 @@
                 <div class="col-md-12"><div>.col-md-12</div></div>
             </div>
         </div>
-        <div class="section-container">
+        <div class="container">
             <h3>Fluid Gutterless Grids</h3>
             <ul>
                 <li>Add <code>.row-gutterless</code> to a <code>.row</code> to remove all gutters</li>
-                <li>Fluid gutterless rows do not need to be placed inside <code>.section-container-fluid</code></li>
+                <li>Fluid gutterless rows do not need to be placed inside <code>.container-fluid</code></li>
             </ul>
         </div>
         <div class="row row-gutterless">
@@ -289,10 +289,10 @@
             <div class="col-md-2"><div>.col-md-2</div></div>
             <div class="col-md-4"><div>.col-md-4</div></div>
         </div>
-        <div class="section-container">
+        <div class="container">
             <h3>Fixed Gutterless Grids</h3>
             <ul>
-                <li>Place a gutterless grid inside <code>.section-container</code></li>
+                <li>Place a gutterless grid inside <code>.container</code></li>
             </ul>
             <div class="row row-gutterless">
                 <div class="col-md-2"><div>.col-md-2</div></div>
@@ -353,7 +353,7 @@
     </section>
 
     <section>
-        <div class="section-container">
+        <div class="container">
             <header>
                 <h2>Utilities</h2>
             </header>

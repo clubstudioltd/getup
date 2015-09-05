@@ -1,0 +1,21 @@
+/* ==========================================================================
+ * Club Getup: Typography
+ * ========================================================================== */
+
+body, input, textarea {
+  font-family: $font-family-base;
+  -webkit-font-smoothing: $font-smoothing;
+}
+
+body {
+  line-height: $line-height;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-headings;
+  line-height: $line-height-headings;
+}
+
+a {
+  text-decoration: none;
+}

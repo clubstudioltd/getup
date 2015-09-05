@@ -1,0 +1,30 @@
+/* ==========================================================================
+ * Club Getup: Lists
+ * ========================================================================== */
+
+.list-unstyled {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.list-inline {
+  @extend .list-unstyled;
+
+  > li {
+    display: inline-block;
+    padding-right: 10px;
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+
+  &.pull-right,
+  &.text-right {
+    > li {
+      padding-right: 0;
+      padding-left: 10px;
+    }
+  }
+}
