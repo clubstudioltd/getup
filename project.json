@@ -1,0 +1,20 @@
+{
+    "js": {
+        "main.js": [
+            "src/js/getup.js"
+        ]
+    },
+    "dirs": {
+        "assets": {
+            "sass": "src/sass",
+            "js": "src/js",
+            "img": "src/img"
+        },
+        "templates": "dist",
+        "build": {
+            "css": "dist/css",
+            "js": "dist/js",
+            "img": "dist/img"
+        }
+    }
+}
