@@ -1,53 +1,61 @@
-/* ==========================================================================
- * Club Getup: Variables
- * ========================================================================== */
+// ========================================================================== //
+// Club Getup: Variables
+// ========================================================================== //
 
-/* --------------------------------------------------------------------------
- * Fonts & Typography
- * -------------------------------------------------------------------------- */
+// -------------------------------------------------------------------------- //
+// Colour
+// -------------------------------------------------------------------------- //
 
-$font-family-base: Helvetica, Arial, sans-serif !default;
-$font-family-headings: $font-family-base !default;
+$black: #000 !default;
+$white: #fff !default;
+
+// -------------------------------------------------------------------------- //
+// Fonts & Typography
+// -------------------------------------------------------------------------- //
+
+$font-family-sans: Helvetica, Arial, sans-serif !default;
+$font-family-serif: Helvetica, Arial, sans-serif !default;
+$font-family-headings: $font-family-sans !default;
 $font-smoothing: antialiased !default;
 $font-size: 16px !default;
 
 $line-height: 1.6 !default;
 $line-height-headings: 1.2 !default;
 
-/* --------------------------------------------------------------------------
- * Media Query Breakpoints
- * -------------------------------------------------------------------------- */
+// -------------------------------------------------------------------------- //
+// Media Query Breakpoints
+// -------------------------------------------------------------------------- //
 
-$small-min:   0px !default;
+$small-min:   0 !default;
 $small-max:   640px !default;
 $medium-min:  641px !default;
 $medium-max:  1024px !default;
 $large-min:   1025px !default;
-$large-max:   1440px !default;
+$large-max:   1400px !default;
 $xlarge-min:  1441px !default;
 $xlarge-max:  1920px !default;
 $xxlarge-min: 1921px !default;
 
-/* --------------------------------------------------------------------------
- * Media Queries
- * -------------------------------------------------------------------------- */
+// -------------------------------------------------------------------------- //
+// Media Queries
+// -------------------------------------------------------------------------- //
 
-$screen:       "only screen" !default;
-$landscape:    "{#$screen} and (orientation: landscape)" !default;
-$portrait:     "{#$screen} and (orientation: portrait)" !default;
-$small-up:     $screen !default;
-$small-only:   "#{$screen} and (max-width: #{$small-max})" !default;
-$medium-up:    "#{$screen} and (min-width: #{$medium-min})" !default;
-$medium-only:  "#{$screen} and (min-width: #{$medium-min}) and (max-width: #{$medium-max})" !default;
-$large-up:     "#{$screen} and (min-width: #{$large-min})" !default;
-$large-only:   "#{$screen} and (min-width: #{$large-min}) and (max-width: #{$large-max})" !default;
-$xlarge-up:    "#{$screen} and (min-width: #{$xlarge-min})" !default;
-$xlarge-only:  "#{$screen} and (min-width: #{$xlarge-min}) and (max-width: #{$xlarge-max})" !default;
-$xxlarge-up:   "#{$screen} and (min-width: #{$xxlarge-min})" !default;
+$screen:      'only screen' !default;
+$landscape:   '{#$screen} and (orientation: landscape)' !default;
+$portrait:    '{#$screen} and (orientation: portrait)' !default;
+$small-up:    $screen !default;
+$small-only:  '#{$screen} and (max-width: #{$small-max})' !default;
+$medium-up:   '#{$screen} and (min-width: #{$medium-min})' !default;
+$medium-only: '#{$screen} and (min-width: #{$medium-min}) and (max-width: #{$medium-max})' !default;
+$large-up:    '#{$screen} and (min-width: #{$large-min})' !default;
+$large-only:  '#{$screen} and (min-width: #{$large-min}) and (max-width: #{$large-max})' !default;
+$xlarge-up:   '#{$screen} and (min-width: #{$xlarge-min})' !default;
+$xlarge-only: '#{$screen} and (min-width: #{$xlarge-min}) and (max-width: #{$xlarge-max})' !default;
+$xxlarge-up:  '#{$screen} and (min-width: #{$xxlarge-min})' !default;
 
-/* --------------------------------------------------------------------------
- * Grid System
- * -------------------------------------------------------------------------- */
+// -------------------------------------------------------------------------- //
+// Grid System
+// -------------------------------------------------------------------------- //
 
 $grid-columns: 12 !default;
 $grid-gutter: 20px !default;
