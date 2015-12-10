@@ -6,39 +6,39 @@
 // Core Variables
 // -------------------------------------------------------------------------- //
 
-@import "getup/variables";
+@import "config/variables";
 
 // -------------------------------------------------------------------------- //
 // Helpers
 // -------------------------------------------------------------------------- //
 
-@import "getup/helpers/mixins";
-@import "getup/helpers/functions";
+@import "helpers/mixins";
+@import "helpers/functions";
 
 // -------------------------------------------------------------------------- //
 // Reset and dependencies
 // -------------------------------------------------------------------------- //
 
-@import "getup/vendor/normalize";
+@import "vendor/normalize";
 
 // -------------------------------------------------------------------------- //
 // Base
 // -------------------------------------------------------------------------- //
 
-@import "getup/base/base";
-@import "getup/base/typography";
-@import "getup/base/buttons";
-@import "getup/base/lists";
+@import "base/base";
+@import "base/typography";
+@import "base/buttons";
+@import "base/lists";
 
 // -------------------------------------------------------------------------- //
 // Components
 // -------------------------------------------------------------------------- //
 
-@import "getup/components/grid";
-@import "getup/components/icons";
+@import "components/grid";
+@import "components/icons";
 
 // -------------------------------------------------------------------------- //
 // Utilities
 // -------------------------------------------------------------------------- //
 
-@import "getup/helpers/utilities";
+@import "helpers/utilities";
