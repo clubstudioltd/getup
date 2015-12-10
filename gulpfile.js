@@ -45,7 +45,7 @@ gulp.task('sass', function () {
             errLogToConsole: true
         }))
         .pipe(prefixer({
-            browsers: ['last 2 versions', 'ie 8', 'ie 9']
+            browsers: config.browsers
         }))
         .pipe(sourcemaps.write())
         .pipe(gulp.dest(config.dirs.build.css))
@@ -59,7 +59,7 @@ gulp.task('sass', function () {
 gulp.task('autoprefixer', function () {
     return gulp.src(config.dirs.build.css + '/**/*.css')
         .pipe(prefixer({
-            browsers: ['last 2 versions', 'ie 8', 'ie 9']
+            browsers: config.browsers
         }))
         .pipe(gulp.dest(config.dirs.build.css));
 });
@@ -77,7 +77,7 @@ gulp.task('minify-css', function () {
 });
 
 /* --------------------------------------------------------------------------
- * Concatenate and minify Javascript
+ * Concatenate and minify JavaScript
  * -------------------------------------------------------------------------- */
 
 gulp.task('uglify', function () {
@@ -140,6 +140,7 @@ gulp.task('default', function () {
     return sequence(
         'clean',
         ['sass', 'uglify'],
+        'autoprefixer',
         'watch'
     );
 });
