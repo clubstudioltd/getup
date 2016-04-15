@@ -11,20 +11,13 @@
 .list-inline {
   @extend %list-unstyled;
 
-  > li {
+  @include has('item') {
     display: inline-block;
-    padding-right: 10px;
 
-    &:last-child {
+    &:last-child,
+    .pull-right &,
+    .text-right & {
       padding-right: 0;
-    }
-  }
-
-  &.pull-right,
-  &.text-right {
-    > li {
-      padding-right: 0;
-      padding-left: 10px;
     }
   }
 }
