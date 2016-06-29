@@ -7,17 +7,3 @@
   padding-left: 0;
   list-style: none;
 }
-
-.list-inline {
-  @extend %list-unstyled;
-
-  @include has('item') {
-    display: inline-block;
-
-    &:last-child,
-    .pull-right &,
-    .text-right & {
-      padding-right: 0;
-    }
-  }
-}
